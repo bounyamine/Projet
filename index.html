@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculatrice scientifique</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="topbar">
+        <span>Scientific</span>
+        <button class="mode-toggle" id="modeToggle" type="button">DEG</button>
+      </div>
+
+      <div class="display">
+        <div class="expression" id="expression">0</div>
+        <div class="result" id="result">0</div>
+      </div>
+
+      <div class="keys">
+        <button class="clear" type="button" data-action="clear">C</button>
+        <button class="clear" type="button" data-action="delete">DEL</button>
+        <button class="operator" type="button" data-value="(">(</button>
+        <button class="operator" type="button" data-value=")">)</button>
+        <button class="operator" type="button" data-value="/">÷</button>
+
+        <button class="function" type="button" data-value="sin(">sin</button>
+        <button class="function" type="button" data-value="cos(">cos</button>
+        <button class="function" type="button" data-value="tan(">tan</button>
+        <button class="function" type="button" data-value="sqrt(">√</button>
+        <button class="operator" type="button" data-value="*">×</button>
+
+        <button class="function" type="button" data-value="log(">log</button>
+        <button class="function" type="button" data-value="ln(">ln</button>
+        <button class="function" type="button" data-value="π">π</button>
+        <button class="function" type="button" data-value="e">e</button>
+        <button class="operator" type="button" data-value="-">−</button>
+
+        <button class="function" type="button" data-value="^">xʸ</button>
+        <button class="function" type="button" data-value="%">%</button>
+        <button class="function" type="button" data-value="sqrt(">x²</button>
+        <button class="function" type="button" data-value="^2">x²</button>
+        <button class="operator" type="button" data-value="+">+</button>
+
+        <button type="button" data-value="7">7</button>
+        <button type="button" data-value="8">8</button>
+        <button type="button" data-value="9">9</button>
+        <button class="operator" type="button" data-value=".">.</button>
+        <button class="function" type="button" data-value="10^">10ˣ</button>
+
+        <button type="button" data-value="4">4</button>
+        <button type="button" data-value="5">5</button>
+        <button type="button" data-value="6">6</button>
+        <button type="button" data-value="00">00</button>
+        <button class="equals" type="button" data-action="equals">=</button>
+
+        <button type="button" data-value="1">1</button>
+        <button type="button" data-value="2">2</button>
+        <button type="button" data-value="3">3</button>
+        <button class="zero" type="button" data-value="0">0</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
